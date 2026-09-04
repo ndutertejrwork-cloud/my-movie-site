@@ -6,30 +6,34 @@
     <title>Our Private Cinema</title>
     <style>
         body { background-color: #141414; color: white; font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 20px; }
-        .movie-card { background: #2f2f2f; padding: 15px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
-        iframe { width: 100%; height: 200px; border: none; border-radius: 4px; margin-top: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 20px; }
+        .movie-card { background: #2f2f2f; padding: 25px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); text-align: center; }
+        .movie-icon { font-size: 50px; margin-bottom: 10px; display: block; }
+        .watch-btn { display: inline-block; background-color: #E50914; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 15px; transition: 0.2s ease; }
+        .watch-btn:hover { background-color: #b80710; transform: scale(1.05); }
         h1 { color: #E50914; } /* Netflix Red */
     </style>
 </head>
 <body>
 
     <h1>🍿 Private Cinema</h1>
-    <p>Welcome friends! Click play to stream.</p>
+    <p>Welcome friends! Select a title below to stream directly.</p>
 
     <div class="grid">
         <!-- Movie 1 -->
         <div class="movie-card">
+            <span class="movie-icon">🎬</span>
             <h3>Movie Title 1</h3>
-            <iframe src="https://google.com" allow="autoplay"></iframe>
+            <p style="color: #aaa; font-size: 14px;">Stored safely on Google Drive</p>
+            <a href="https://google.com" target="_blank" class="watch-btn">▶ Watch Movie</a>
         </div>
 
         <!-- Movie 2 -->
         <div class="movie-card">
+            <span class="movie-icon">🎞️</span>
             <h3>Movie Title 2</h3>
-            <div style="height: 200px; display: flex; align-items: center; justify-content: center; background: #1f1f1f; color: #888; margin-top: 10px; border-radius: 4px;">
-                No Video Added Yet
-            </div>
+            <p style="color: #aaa; font-size: 14px;">No file linked yet</p>
+            <a href="#" class="watch-btn" style="background-color: #555; pointer-events: none;">Unavailable</a>
         </div>
     </div>
 
