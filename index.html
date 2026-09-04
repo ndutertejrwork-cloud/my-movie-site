@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Private Cinema</title>
+    <style>
+        body { background-color: #141414; color: white; font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+        .movie-card { background: #2f2f2f; padding: 15px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
+        video { width: 100%; border-radius: 4px; margin-top: 10px; }
+        h1 { color: #E50914; } /* Netflix Red */
+    </style>
+</head>
+<body>
+
+    <h1>🍿 Private Cinema</h1>
+    <p>Welcome friends! Click play to stream.</p>
+
+    <div class="grid">
+        <!-- Movie 1 -->
+        <div class="movie-card">
+            <h3>Movie Title 1</h3>
+            <video controls preload="metadata">
+                <source src="PASTE_YOUR_DIRECT_LINK_HERE" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie-card">
+            <h3>Movie Title 2</h3>
+            <video controls preload="metadata">
+                <source src="PASTE_YOUR_SECOND_DIRECT_LINK_HERE" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>
 
